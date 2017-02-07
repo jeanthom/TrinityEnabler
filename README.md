@@ -1,0 +1,18 @@
+# Trinity Enabler
+
+Apple Pro Speakers (codenamed "Trinity") feature a built-in Micronas UAC3552A USB DAC chip. This chip needs some firmware and some parameters (EQ settings) from the host computer to work properly. Apple's driver took care of this. Unfortunately, Apple Pro Speakers was dropped from Mac OS X when Snow Leopard came out.
+
+This utility provides Apple Pro Speakers support in recent macOS versions.
+
+## Howto ##
+
+### Using release builds ###
+
+Download the utility from the [release page](https://github.com/jeanthom/trinityenabler/releases). Drag'n'drop it into a terminal, and type in the matching power rating for your USB port (in most cases it will be `--power-500` or `--power-1500`). Hit the enter key, and your Apple Pro Speakers should be working :)
+
+### Compile it yourself ###
+
+```
+make
+bin/trinityenabler --power-500
+```
