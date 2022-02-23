@@ -2,7 +2,7 @@
 
 Apple Pro Speakers (codenamed "Trinity") feature a built-in Micronas UAC3552A USB DAC chip. This chip needs some firmware and some parameters (EQ settings) from the host computer to work properly. Apple's driver took care of this. Unfortunately, Apple Pro Speakers support was dropped from Mac OS X when Snow Leopard came out.
 
-This utility brings Apple Pro Speakers support back in newer macOS versions. Are you running Linux? [Try this instead.](https://github.com/jeanthom/TrinityEnabler)
+This utility brings Apple Pro Speakers support back in newer macOS versions. Are you running Linux? [Try this instead.](https://github.com/jeanthom/TrinityEnablerLinux)
 
 ## Howto ##
 
