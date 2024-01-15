@@ -30,6 +30,10 @@
 #include <IOKit/usb/USBSpec.h>
 #include "main.h"
 
+#if (MAC_OS_X_VERSION_MAX_ALLOWED < 120000) // Before macOS 12 Monterey
+#define kIOMainPortDefault kIOMasterPortDefault
+#endif
+
 UInt8 disableplugin_value= 0xba;
 
 int main(int argc, char *argv[]) {
@@ -127,7 +131,7 @@ IOUSBDeviceInterface300** usbDeviceInterfaceFromVIDPID(SInt32 vid, SInt32 pid) {
 				      &pid));
 
   /* Getting all the devices that are matched by the matching dictionary */
-  IOServiceGetMatchingServices(kIOMasterPortDefault,
+  IOServiceGetMatchingServices(kIOMainPortDefault,
 			       matchingDict,
 			       &usbRefIterator);
 
