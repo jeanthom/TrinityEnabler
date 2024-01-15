@@ -30,7 +30,7 @@
 #include <IOKit/usb/USBSpec.h>
 #include "main.h"
 
-#if (MAC_OS_X_VERSION_MAX_ALLOWED < 101700) // Before macOS 12 Monterey
+#if (MAC_OS_X_VERSION_MAX_ALLOWED < 120000) // Before macOS 12 Monterey
 #define kIOMainPortDefault kIOMasterPortDefault
 #endif
 
